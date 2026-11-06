@@ -1,0 +1,6 @@
+{
+  "name": "RupeeScan PWA",
+  "description": "Progressive Web App to scan, extract, verify, and analyze receipts and bills in Indian Rupees (INR) using Gemini AI with offline caching, camera capture, and CSV export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="receiptGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Glow Ring -->
+  <rect x="24" y="24" width="464" height="464" rx="96" stroke="#10b981" stroke-opacity="0.2" stroke-width="2"/>
+
+  <!-- Receipt Document with Shadow -->
+  <g filter="url(#shadow)">
+    <rect x="116" y="80" width="280" height="352" rx="20" fill="url(#receiptGrad)"/>
+    
+    <!-- Receipt Top Header Band -->
+    <path d="M116 100 C116 88.95 124.95 80 136 80 L376 80 C387.05 80 396 88.95 396 100 L396 142 L116 142 Z" fill="url(#accentGrad)"/>
+    
+    <!-- Receipt Top Notch / Pin -->
+    <circle cx="256" cy="111" r="7" fill="#ffffff" opacity="0.9"/>
+    
+    <!-- Rupee Emblem in Center -->
+    <!-- ₹ Symbol -->
+    <g fill="#0f172a" transform="translate(196, 172) scale(0.95)">
+      <!-- Top line -->
+      <rect x="10" y="8" width="108" height="15" rx="7.5" fill="#047857"/>
+      <!-- Mid line -->
+      <rect x="10" y="38" width="108" height="15" rx="7.5" fill="#047857"/>
+      <!-- Spine & Curves of Rupee -->
+      <path d="M42 8 L42 125 M42 8 Q86 8 86 38 Q86 68 42 68 L100 128" stroke="#047857" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Receipt item lines -->
+    <rect x="156" y="318" width="130" height="10" rx="5" fill="#cbd5e1"/>
+    <rect x="314" y="318" width="42" height="10" rx="5" fill="#94a3b8"/>
+    
+    <rect x="156" y="342" width="100" height="10" rx="5" fill="#cbd5e1"/>
+    <rect x="314" y="342" width="42" height="10" rx="5" fill="#94a3b8"/>
+
+    <!-- Divider Line -->
+    <line x1="146" y1="368" x2="366" y2="368" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="6 4"/>
+
+    <!-- Total row -->
+    <rect x="156" y="386" width="70" height="14" rx="7" fill="#0f172a"/>
+    <rect x="296" y="386" width="60" height="14" rx="7" fill="#10b981"/>
+    
+    <!-- Bottom Jagged Receipt Zigzag -->
+    <path d="M116 432 L126 422 L136 432 L146 422 L156 432 L166 422 L176 432 L186 422 L196 432 L206 422 L216 432 L226 422 L236 432 L246 422 L256 432 L266 422 L276 432 L286 422 L296 432 L306 422 L316 432 L326 422 L336 432 L346 422 L356 432 L366 422 L376 432 L386 422 L396 432" stroke="#e2e8f0" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Laser / Scanner Beam across center -->
+  <g opacity="0.85">
+    <line x1="88" y1="265" x2="424" y2="265" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+    <rect x="88" y="260" width="336" height="10" fill="#10b981" opacity="0.25" rx="5"/>
+  </g>
+
+  <!-- Corner Targeting Reticles for Camera View -->
+  <path d="M96 140 L96 96 L140 96" stroke="#10b981" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M416 140 L416 96 L372 96" stroke="#10b981" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M96 372 L96 416 L140 416" stroke="#10b981" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M416 372 L416 416 L372 416" stroke="#10b981" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>
